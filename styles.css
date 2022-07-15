@@ -454,3 +454,18 @@ input[type="search" i]::-webkit-search-cancel-button {
         display: block;
     }
 }
+
+@media not all and (-webkit-min-device-pixel-ratio:0)
+{  
+    .projects-content
+    {
+    overflow-y: overlay;
+    }
+}
+
+@-moz-document url-prefix(){
+    .projects-content, .right-side-wrap
+    {
+        overflow-y: auto;
+    }
+}
